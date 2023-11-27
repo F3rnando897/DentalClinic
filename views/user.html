@@ -252,7 +252,7 @@
 <script> 
         window.onload = function() {
             // Verificar se o usuário está autenticado
-            
+            loadUserAppointments();
         const currentUser = Parse.User.current();
             if (currentUser) {
                 const userName = currentUser.get('username'); // Substitua 'username' pelo campo correto
